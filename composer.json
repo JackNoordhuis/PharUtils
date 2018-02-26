@@ -1,0 +1,20 @@
+{
+    "name": "jacknoordhuis/pharutils",
+    "description": "A library for dealing with phar archives.",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "JackNoordhuis",
+            "email": "me@jacknoordhuis.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jacknoordhuis\\pharutils\\": "src/jacknoordhuis/pharutils/"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.4"
+    }
+}
