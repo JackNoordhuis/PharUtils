@@ -58,7 +58,7 @@ class PharHelper {
 		foreach($phar as $file => $finfo) {
 			/** @var \PharFileInfo $finfo */
 			if($finfo->getSize() > (1024 * 512)) {
-				$output->writeln("<fg=orange>Compressing " . $finfo->getFilename() . "</>");
+				$output->writeln("<fg=magenta>Compressing " . $finfo->getFilename() . "</>");
 				$finfo->compress(\Phar::GZ);
 			}
 		}
